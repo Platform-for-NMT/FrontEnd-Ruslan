@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #1A1A1A;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 2100px;
+    left: 50px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+
+.back-link {
+    position: absolute;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    top: 50px;
+    margin-bottom: 40px;
+    display: inline-block;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    font-weight: 700;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 16px;
+    background: #2D2D2D;
+    border: 1px solid #3D3D3D;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #8A2BE2;
+    box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.2);
+}
+
+input::placeholder {
+    color: #7A7A7A;
+}
+
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7A7A7A;
+    cursor: pointer;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(90deg, #8A2BE2 0%, #4B0082 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(138, 43, 226, 0.3);
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    color: #7A7A7A;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #3D3D3D;
+}
+
+.divider span {
+    padding: 0 15px;
+}
+
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 30px;
+}
+
+.authorization-text {
+    position: absolute;
+    top: 150px;
+}
+
+.social-btn {
+    width: 58px;
+    height: 58px;
+    border-radius: 12px;
+    border: 1px solid #3D3D3D;
+    background: #2D2D2D;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-btn i {
+    font-size: 20px;
+}
+
+.login-link {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    text-align: center;
+    color: #7A7A7A;
+}
+
+.forgot-password {
+    position: relative;
+    left: 565px;
+}
+
+.login-link a {
+    color: #8A2BE2;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.right-panel {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+/* .grid-pattern {
+    position: absolute;
+    top: 0;
+    left: -1000;
+    width: 100%;
+    height: 100%;
+    background: 
+        linear-gradient(rgba(45, 45, 45, 0.8) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(45, 45, 45, 0.8) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.5;
+} */
+
+.cat-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.fon {
+    position: absolute;
+    top: 110px;
+    height: 900px;
+    left: 28px;
+    z-index: 1;
+}
+
+.cat {
+    position: absolute;
+    top: 120px;
+    left: 55px;
+    height: 900px;
+    z-index: 2;
+}
+
+@media (max-width: 992px) {
+    .right-panel {
+        display: none;
+    }
+    
+    .left-panel {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
