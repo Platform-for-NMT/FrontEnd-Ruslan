@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #1A1A1A;
+    color: #fff;
+    min-height: 100vh;
+}
+
+
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    margin-left: 30%;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.registration-button {
+    position: absolute;
+    right: 50px;
+    padding: 12px 28px;
+    background: linear-gradient(90deg, #8A2BE2 0%, #4B0082 100%);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.reg-btn-text {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.start-point {
+    height: 40%;
+    width: 92.5%;
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+    margin-left: 4%;
+    background-color: #8A2BE2;
+}
+
+.logo-container {
+    font-size: 64px;
+    letter-spacing: 5px;
+    color: #B28BFF;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: column;
+}
+
+.right-text {
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
