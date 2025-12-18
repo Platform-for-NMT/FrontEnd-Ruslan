@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
+
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +9,10 @@
 }
 
 body {
-    background-color: #1A1A1A;
+    background-color: #000000;
     color: #fff;
     min-height: 100vh;
 }
-
 
 .header {
     position: absolute;
@@ -21,6 +21,7 @@ body {
     padding: 20px 50px;
     display: flex;
     align-items: center;
+
 }
 
 .nav-links {
@@ -53,13 +54,12 @@ body {
 }
 .start-point {
     height: 40%;
-    width: 92.5%;
+    width: 100%;
     display: flex;
     align-items: center;
-    margin-top: 7%;
-    margin-left: 4%;
-    background-color: #8A2BE2;
+    margin-top: 6%;
 }
+
 
 .logo-container {
     font-size: 64px;
@@ -77,4 +77,70 @@ body {
     color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -10%;
 }
+
+.four-star-rating {
+    display: flex;
+    margin-left: -80%;
+    margin-top: -10%;
+}
+
+.name {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-left: -80%;
+    margin-top: 10%;
+    letter-spacing: 2px;
+    color: #fff;
+
+}
+
+.quote {
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-left: -80%;
+    color: #fff;
+    
+}
+
+.quote-rating {
+    display: flex;
+    margin-left: -80%;
+    margin-top: -17%;
+    color: #fff;
+    font-size: 10px;
+}
+
+.subjects-container {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+    margin-left: 10%;
+    flex-direction: column;
+
+}
+
+.subjects {
+    font-size: 40px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-left: -90%;
+    font-family: "Comfortaa", sans-serif;
+}
+
+.subjects-images1, .subjects-images2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
